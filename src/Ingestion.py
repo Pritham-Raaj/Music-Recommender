@@ -116,7 +116,7 @@ def create_spark_session():
     print(f"Initializing Spark with S3 access to region: {AWS_REGION}")
     
     spark = SparkSession.builder \
-        .appName("FMA_CSV_to_Parquet") \
+        .appName("Data Ingestion from S3 bucket") \
         .master("local[*]") \
         .config("spark.jars.packages", 
                 "org.apache.hadoop:hadoop-aws:3.3.4,"
